@@ -1,0 +1,33 @@
+<!--<div class="avtart">
+    <img src="../../assets/avatar.png" alt="avatar">
+</div>
+-->
+<!--Search is performed by using Ng2SearchPipeModule-->
+<input class="search" placeholder=" Search" [(ngModel)]="searchText">
+<div class="list">
+    <!--Material list (mat-list) is used for diplaying list of items-->
+    <mat-list class="cards" *ngFor='let crop of crop | filter: searchText'>
+        <!--mat-card is used to create a card-->
+        <mat-card>
+            <!--mat-card-header is used to add card header-->
+            <mat-card-header>
+                <!--mat-card-Title is used to add card title-->
+                <mat-card-title>{{crop.name}}</mat-card-title>
+                <!--mat-card-subtitle is used to add card subtitle-->
+                <mat-card-subtitle>{{crop.name}}</mat-card-subtitle>
+            </mat-card-header>
+            <!--mat-card-image is used to add image to card-->
+            <img mat-card-image src="{{crop.image}}" alt=" crop Images">
+            <mat-card-content>
+                <!--mat-card-Content is used to add a description card-->
+                <p>
+                    <b> {{crop.description}}</b>
+                </p>
+            </mat-card-content>
+            <!--mat-Icon is used to add icon and assigned a link using href-->
+            <a href="{{crop.url}}">
+                <mat-icon style="color: orangered; align-items: center;">link</mat-icon>
+            </a>
+        </mat-card>
+    </mat-list>
+</div>

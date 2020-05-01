@@ -1,0 +1,42 @@
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+    color: black;
+}
+
+.register {
+    font-size: 1em;
+}
+
+.form {
+    margin-left: 38%;
+    width: 25%;
+    background-color: white;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    box-shadow: 10px 10px 5px orangered;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.submit {
+    width: 200px;
+    border: 1px solid rgb(216, 46, 88);
+    height: 40px;
+    background-color: rgb(253, 222, 230);
+    border-radius: 5px;
+    color: rgb(216, 46, 88);
+    margin-bottom: 30px;
+}
+
+.submit:hover {
+    color: black;
+    background-color: orangered;
+}
+
+.mat-form-field {
+    color: navy;
+    background-color: white;
+    width: 80%;
+}

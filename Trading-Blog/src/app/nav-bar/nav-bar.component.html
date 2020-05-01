@@ -1,0 +1,30 @@
+<nav>
+    <!--unordered List is taken and list style is none-->
+    <ul>
+        <li class="logo-text">
+            <!-- <img class="logo" src="../../assets/Logo.png">-->
+            <b>Trading Blog</b>
+        </li>
+        <!-- Nav bar helps users to navigate by clicking on them-->
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <!-- (mat-menu) Menu helps us to catagories different show users to navigate by clicking on them-->
+            <li>
+                <a href="#purchase" class="nav-link" [matMenuTriggerFor]="menu">Purchases</a>
+                <mat-menu class="tab" #menu="matMenu">
+                    <button class="login" mat-menu-item [matMenuTriggerFor]="more">Login</button>
+                    <button class="register" routerLink='/registration' mat-menu-item>Registration</button>
+                </mat-menu>
+                <mat-menu #more="matMenu">
+                    <button class="login" routerLink='/login' mat-menu-item>Login</button>
+                    <button class="calculation" routerLink='/calculation' mat-menu-item>Raw Material Calculation</button>
+                    <button mat-menu-item></button>
+                </mat-menu>
+            </li>
+            <li><a href="#Crop Details" class="nav-link" routerLink='/cropdetails'>Crop Details</a></li>
+            <li><a href="#Prices" class="nav-link">Prices</a></li>
+            <li><a href="#About" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </ul>
+</nav>

@@ -1,0 +1,93 @@
+<div class="Main">
+    <div class="sub-main">
+        <img src="../../assets/wheat.jpg" alt="fields with crops">
+    </div>
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <h2>WE BELIEVE IN,</h2>
+            <h1>Agriculture is the backbone of Indian Economy</h1>
+            <p>
+                India is a most populated country so we need more jobs is required for our growth so agriculture industry is occupied around <b> 70% </b>of human resources utilizes. Food is important for everyone to live so who produce a food their called
+                backbone of our nation. Politicians and Businessman are thinking never to come beyond in the society. We are a backbone of India but now we reached <b>21st century</b> still don't have enough basic need to fulfill for our life. agriculture
+                is the major source of income to many people India.
+            </p>
+            <p><b>Over the past few decades, </b>the manufacturing and services sectors have increasingly contributed to the growth of the economy, while the agriculture sector’s contribution has <b>decreased</b> from more than <b>50% of GDP </b>in the 1950s
+                to <b>15.4% in 2015-16</b> (at constant prices).</p>
+            <p><b>Key issues affecting agricultural productivity </b>include the decreasing sizes of agricultural land holdings, continued dependence on the monsoon, inadequate access to irrigation, imbalanced use of soil nutrients resulting in loss of fertility
+                of soil, uneven access to modern technology in different parts of the country, lack of access to formal agricultural credit, limited procurement of food grains by government agencies, and failure to provide remunerative prices to farmers.
+                Some of the recommendations made by committees and expert bodies over the years include bringing in agricultural land leasing laws, shifting to micro-irrigation techniques to improve efficiency of water use, improving access to quality
+                seeds by engaging with the private sector, and introducing a national agricultural market to allow the trading of agricultural produce online.</p>
+            <br>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="About">
+        <h2>About Us</h2>
+        <p> In This Blog We are here with a Online Market where you can have an easy to use Ontime Merchant Bid and Ontime Goods are taken from farmers with the help of carrier Trucks. These Online Market provides a cost-effective and comprehensive real time
+            monitoring service that will notify you of changes in bids and key events via email or SMS or calls, as they happen. You stay in-touch with us, wherever you are and whatever you’re doing. And this blog is very much useful for Farmers as well
+            as Trading merchants, stay active in the blog by checking Blog Daily, and secure the bid – all from your Desktop!
+        </p>
+        <!--Ordered List is displayed-->
+        <ol>
+            <h2>Now a days Farmers need to have:</h2>
+            <li>on-time seasons arrival</li>
+            <li>on-time seeds availability</li>
+            <li>Good Water resources</li>
+            <li>Fertile Soil</li>
+            <li>good fertilizers and on-time fertilizers availability</li>
+            <li>on-time Seeds germinations</li>
+            <li>on-time fertilizers</li>
+            <li>Transport Facilities</li>
+            <li>on-time market and good market price</li>
+        </ol>
+        <br>
+    </section>
+    <!-- Price Section -->
+    <section id="Prices">
+        <h2>Prices of Different Crops</h2>
+        <mat-form-field>
+            <!--Filter option is used by taking input from user-->
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="search..">
+        </mat-form-field>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef> Weight(Quintols) </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            </ng-container>
+            <!-- Price Column -->
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef> Price(₹)</th>
+                <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </section>
+    <br><br>
+    <!-- Concact Section -->
+    <section id="contact">
+        <!--UnOrdered List-->
+        <ul>
+            <li>
+                <h2>Contact Us</h2>
+            </li>
+            <li><b>Name:</b> Gouda Naveen</li>
+            <li><b>Phone number:</b> 7396599955</li>
+            <li><b>Email:</b> Naveentraders@gmail.com</li>
+            <li><b>Company Name:</b> Naveen Traders</li>
+        </ul>
+    </section>
+</div>
