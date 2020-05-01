@@ -121,29 +121,3 @@ export const crops:cropInterface[]=[
 
 
 ];
-//image:
-//Name:
-//Uses:
-//Grown Areas:
-//Which Seasons it grows:
-//
-
-
-//jowar
-//bajra
-//spieces
-//silk
-//sugarcanes
-//soump
-//watermelon
-//pineapple
-//apple
-//J
-//Tobacco
-//Tea
-//sunflower
-//ground nuts
-//coconut
-//coco
-
-//cropDetails: Major crops grown and Cattle used and Equipments used
